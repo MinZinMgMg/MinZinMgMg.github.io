@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/w3css/3/w3.css">
+
+<body>
+    <!--Navigation-->
+    <nav class="w5-bar w5-black">
+      <a href="home" class="w3-button w3-bar-item">Home</a>  
+      <a href="about" class="w3-button w3-bar-item">About</a>  
+      <a href="service" class="w3-button w3-bar-item">Service</a>  
+      <a href="contact" class="w3-button w3-bar-item">Contact</a>  
+    </nav>
+    <!--Slide Show-->
+    <section>
+     <img class="mySlides" src="../my prj1.jpg" style="width:100%">
+     <img class="mySlides" src="../myprj3.jpg" style="width:100%">
+     <img class="mySlides" src="../myprj4.jpg" style="width:100%">
+
+    </section>
+
+    <!--Band Description-->
+    <section class="w3-container w3-center w3-content" style="max-width:600px">
+        <h2 class="w3-wide">HOME PAGE</h2>
+        <p class="w3-opacity"><i>With Kindness</i></p>
+        <p class="w3-justify">Information technology (IT) is the use of computers to create, process, store, and exchange all kinds of electronic data[1] and information. IT is typically used within the context of business operations as opposed to personal or entertainment technologies.[2] IT is considered to be a subset of information and communications technology (ICT). An information technology system (IT system) is generally an information system, a communications system, or, more specifically speaking, a computer system – including all hardware, software, and peripheral equipment – operated by a limited group of IT users.
+
+            Humans have been storing, retrieving, manipulating, and communicating information since the Sumerians in Mesopotamia developed writing in about 3000 BC.[3] However, the term information technology in its modern sense first appeared in a 1958 article published in the Harvard Business Review; authors Harold J. Leavitt and Thomas L. Whisler commented that "the new technology does not yet have a single established name. We shall call it information technology (IT)." Their definition consists of three categories: techniques for processing, the application of statistical and mathematical methods to decision-making, and the simulation of higher-order thinking through computer programs.[4]
+            
+            The term is commonly used as a synonym for computers and computer networks, but it also encompasses other information distribution technologies such as television and telephones. Several products or services within an economy are associated with information technology, including computer hardware, software, electronics, semiconductors, internet, telecom equipment, and e-commerce.[5][a]
+            
+            Based on the storage and processing technologies employed, it is possible to distinguish four distinct phases of IT development: pre-mechanical (3000 BC – 1450 AD), mechanical (1450–1840), electromechanical (1840–1940), and electronic (1940–present).[3] This article focuses on the most recent period (electronic).
+        </p>
+      </section>
+      <section class="w3-row-padding w3-center w3-light-grey">
+        <article class="w3-third">
+          <p>Use of Information Technology in Our Daily Lives</p>
+          <img src="../myprj5.jpg" alt="Random Name" style="width:100%">
+          <p>IT is the wieldly use.</p>
+        </article>
+        <article class="w3-third">
+          <p>Information Technology</p>
+          <img src="../myprj6.jpg" alt="Random Name" style="width:100%">
+          <p>IT is the useful.</p>
+        </article>
+        <article class="w3-third">
+          <p></p>
+          <img src="../myprj7.jpg" alt="Random Name" style="width:100%">
+          <p></p>Information Technology
+        </article>
+      </section>
+      <!--Footer-->
+      <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+        <a href="#"><i class="fa fa-facebook-official"></i></a>
+        <a href="#"><i class="fa fa-pinterest-p"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-flickr"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <p class="w3-medium">
+        Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+        </p>
+      </footer>
+      
+    <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+    </script>
+</body>
+</html>
