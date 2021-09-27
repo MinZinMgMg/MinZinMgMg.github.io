@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style> 
+      .blue{
+          color: blue;
+      }
+      .red{
+          color: red;
+      }
+
+
+
+    </style>
+</head>
+<body>
+    <a href="myprj.html">Home</a>
+    <a href="">About</a>
+    <h3 id="myh3" class="blue">What <i> do you mean by</i> IT?</h3>
+    <h2 id="myh2" class="red">This is my project!</h2>
+    <p id="myp1" class="blue">Image result for it about
+        Information technology (IT) is the use of any computers, storage, networking and other physical devices,
+         infrastructure and processes to create, process, store, secure and exchange
+          all forms of electronic data. ... The commercial use of IT encompasses both computer technology and
+           telecommunications.</p>
+           <p id="myp2" class="red"></p>
+           <input type="text" name="name" id="name" placeholder="your name"><br>
+           <button onclick="show()">Click Me For Tag Name</button><br>
+           <button onclick="showID()">Click Me For ID</button><br>
+           <button onclick="showClass()">Click me for Class</button>
+           <script>
+             function showClass(){
+
+                 let myblue=document.getElementsByClassName('blue')
+                 console.log(myblue);
+                 console.log(myblue[0].innerHTML);
+                 console.log(myblue[1].innerHTML);
+
+
+                 let myred=document.querySelectorAll('.red');
+                 console.log(myred);
+                 console.log(myred[0].innerHTML);
+
+             }
+
+                function showID(){
+                    let myblue=document.getElementsByClassName('blue');
+                    console.log(myblue);
+
+                      let myh3=document.getElementById('myh3')
+                      console.log(myh3.innerHTML);
+                      let myh2=document.querySelector('#myh2')
+                      console.log(myh2.innerHTML);
+                      let myname=document.getElementsByName('name')
+                      console.log(myname);
+                      console.log(myname[0].value);
+                }
+
+              function show(){
+                  let myh3=document.getElementsByTagName('h3')
+                  console.log(myh3[0].innerHTML);
+                  console.log(myh3[0].innerText);
+                  myh3[0].innerHTML='This is <i>International</i> Technology !';
+              
+              let myh2=document.getElementsByTagName('h2')
+              console.log(myh2);
+              console.log(myh2[0].innerHTML);
+              myh2[0].innerHTML='Same <i>About</i> !';
+              let myp=document.getElementsByTagName('p')
+              console.log(myp);
+              console.log(myp[0]);
+              console.log(myp[1]);
+              
+              myp[1].innerHTML = myh3[0].innerHTML + myh2[0].innerHTML
+              }
+           </script>
+
+
+</body>
+</html>

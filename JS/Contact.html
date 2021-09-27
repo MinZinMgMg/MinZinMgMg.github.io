@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="w3-bar w3-black">
+    <a href="Prj.html" class="w3-button w3-bar-item">Home</a>
+    <a href="" class="w3-button w3-bar-item">About</a>
+    <a href="Service.html" class="w3-button w3-bar-item">Service</a>
+    <a href="Contact.html" class="w3-button w3-bar-item">Contact</a>
+    <h4>Recommended Content for You</h4>
+    </nav>
+    <img src="1.png" alt="" width="50%" id="myimg">
+    
+    <script>
+        let myimg=document.querySelector('#myimg');
+        myimg.onmouseenter=big;
+        myimg.onmouseout=normal;
+
+        function big(){
+        let myimg=document.querySelector('#myimg')
+                myimg.style.width="100%";
+                myimg.style.height="100%";
+        }
+        function normal(){
+        let myimg=document.querySelector('#myimg')
+                myimg.style.width="50%";
+                myimg.style.height="50%";
+                change();
+        }
+
+        function change(){
+         let myimg=document.querySelector('#myimg');
+         let mysrc=myimg.getAttribute('src');
+         console.log(mysrc);
+         if(mysrc=='1.png'){
+             myimg.src='2.jpg';          
+         }else if(mysrc=='2.jpg'){
+            myimg.src='3.png';
+         }else{
+             myimg.src='1.png'
+         }
+         
+        }
+    </script>
+
+</body>
+</html>
